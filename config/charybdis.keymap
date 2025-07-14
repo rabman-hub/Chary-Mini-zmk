@@ -144,10 +144,10 @@ keymap {
         qwerty {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &kp Q                 &kp W             &kp E              &kp R              &kp T                                            &mmv MOVE_UP                     &kp Y               &kp U               &kp I               &kp O              &kp P                       &lt 5 ESC
-&kp BACKSPACE   &kp A                 &hrm_left LALT S  &hrm_left LCTRL D  &hrm_left LSHFT F  &kp G                            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H               &hrm_right RSHFT J  &hrm_right RCTRL K  &hrm_right RALT L  &kp SEMICOLON               &kp SQT
-&kp LEFT_SHIFT  &hrm_left LEFT_GUI Z  &kp X             &kp C              &kp V              &kp B               &kp SPACE                    &mmv MOVE_DOWN                   &kp N               &kp M               &kp COMMA           &kp DOT            &hrm_right RIGHT_GUI SLASH  &kp RIGHT_SHIFT
-                                                        &kp LEFT_CONTROL   &mo 3              &layer_tap 4 SPACE                                                                &layer_tap 4 ENTER  &mo 2               &kp RIGHT_ALT
+&kp TAB         &kp Q                 &kp W             &kp E              &kp R              &kp T                            &kp Y               &kp U               &kp I               &kp O              &kp P                       &lt 5 ESC
+&kp BACKSPACE   &kp A                 &hrm_left LALT S  &hrm_left LCTRL D  &hrm_left LSHFT F  &kp G                            &kp H               &hrm_right RSHFT J  &hrm_right RCTRL K  &hrm_right RALT L  &kp SEMICOLON               &kp SQT
+&kp LEFT_SHIFT  &hrm_left LEFT_GUI Z  &kp X             &kp C              &kp V              &kp B                            &kp N               &kp M               &kp COMMA           &kp DOT            &hrm_right RIGHT_GUI SLASH  &kp RIGHT_SHIFT
+                                                        &kp LEFT_CONTROL   &mo 3              &layer_tap 4 SPACE                                   &layer_tap 4 ENTER  &mo 2               &kp RIGHT_ALT
             >;
 
         };
@@ -155,20 +155,20 @@ keymap {
         colemak {
             display-name = "COLEMAK";
             bindings = <
-&kp GRAVE       &kp Q             &kp W             &kp F                &kp P              &kp B                                          &kp UP                &kp J               &kp L               &kp U               &kp Y              &kp APOS           &kp MINUS
-&caps_word      &hrm_left LGUI A  &hrm_left LALT R  &hrm_left LCTRL S    &hrm_left LSHFT T  &kp G                                &kp LEFT  &kp ENTER  &kp RIGHT  &kp M               &hrm_right RSHFT N  &hrm_right RCTRL E  &hrm_right RALT I  &hrm_right RGUI O  &kp SEMI
-&kp LEFT_SHIFT  &kp Z             &kp X             &kp C                &kp D              &kp V                   &kp SPACE              &kp DOWN              &kp K               &kp H               &kp COMMA           &kp DOT            &kp FSLH           &kp TAB
-                                                    &layer_tap 7 DELETE  &layer_tap 6 ESC   &layer_tap 5 BACKSPACE                                               &layer_tap 2 SPACE  &layer_tap 6 ENTER  &layer_tap 7 TAB
+&kp GRAVE       &kp Q             &kp W             &kp F                &kp P              &kp B                                &kp J               &kp L               &kp U               &kp Y              &kp APOS           &kp MINUS
+&caps_word      &hrm_left LGUI A  &hrm_left LALT R  &hrm_left LCTRL S    &hrm_left LSHFT T  &kp G                                &kp M               &hrm_right RSHFT N  &hrm_right RCTRL E  &hrm_right RALT I  &hrm_right RGUI O  &kp SEMI
+&kp LEFT_SHIFT  &kp Z             &kp X             &kp C                &kp D              &kp V                                &kp K               &kp H               &kp COMMA           &kp DOT            &kp FSLH           &kp TAB
+                                                    &layer_tap 7 DELETE  &layer_tap 6 ESC   &layer_tap 5 BACKSPACE               &layer_tap 2 SPACE  &layer_tap 6 ENTER  &layer_tap 7 TAB
             >;
 
         };
 
         symbol {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH        &kp DOLLAR     &kp PERCENT                                    &mmv MOVE_UP                     &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp TILDE        &kp PLUS          &kp UNDERSCORE  &kp MINUS      &kp PIPE                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PIPE   &kp MINUS         &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DELETE
-&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp GRAVE       &kp BACKSLASH  &kp EQUAL    &kp SCROLLLOCK                    &mmv MOVE_DOWN                   &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-                                           &trans          &trans         &trans                                                                          &trans     &trans            &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH        &kp DOLLAR     &kp PERCENT                                    &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp TILDE        &kp PLUS          &kp UNDERSCORE  &kp MINUS      &kp PIPE                                       &kp PIPE   &kp MINUS         &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DELETE
+&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp GRAVE       &kp BACKSLASH  &kp EQUAL                                      &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+                                           &trans          &trans         &trans                                         &trans     &trans            &trans
             >;
 
             label = "SYMBOL";
@@ -177,10 +177,10 @@ keymap {
         Num {
             label = "Num";
             bindings = <
-&trans  &kp N1        &kp N2        &kp N3            &kp N4          &kp N5                             &kp UP                &kp N6        &kp N7      &kp N8     &kp N9  &kp N0     &kp BACKSPACE
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SLASH                &kp LEFT  &kp ENTER  &kp RIGHT  &kp PLUS      &kp N4      &kp N5     &kp N6  &kp MINUS  &kp ENTER
-&trans  &mkp MB5      &mkp MB4      &mkp LCLK         &mkp MCLK       &mkp RCLK  &kp C_MUTE              &kp DOWN              &kp ASTERISK  &kp N1      &kp N2     &kp N3  &kp EQUAL  &kp CARET
-                                    &trans            &trans          &trans                                                   &kp N0        &kp PERIOD  &kp COMMA
+&trans  &kp N1        &kp N2        &kp N3            &kp N4          &kp N5                             &kp N6        &kp N7      &kp N8     &kp N9  &kp N0     &kp BACKSPACE
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SLASH                          &kp PLUS      &kp N4      &kp N5     &kp N6  &kp MINUS  &kp ENTER
+&trans  &mkp MB5      &mkp MB4      &mkp LCLK         &mkp MCLK       &mkp RCLK                          &kp ASTERISK  &kp N1      &kp N2     &kp N3  &kp EQUAL  &kp CARET
+                                    &trans            &trans          &trans                             &kp N0        &kp PERIOD  &kp COMMA
             >;
 
         };
@@ -188,20 +188,20 @@ keymap {
         Nav {
             display-name = "Nav";
             bindings = <
-&rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &rgb_ug RGB_SPD  &rgb_ug RGB_SPI   &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                                &mmv MOVE_UP                     &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END        &kp K_REDO  &sys_reset
-&bt BT_CLR       &kp LEFT_GUI       &kp LEFT_ALT     &kp LEFT_CONTROL  &kp LEFT_SHIFT   &bt BT_SEL 4                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp RIGHT   &bootloader
-&bt BT_CLR_ALL   &ext_power EP_TOG  &out OUT_TOG     &rgb_ug RGB_OFF   &rgb_ug RGB_ON   &rgb_ug RGB_TOG  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp K_LOCK     &kp LS(LC(V))   &kp LS(LC(C))   &kp LS(LC(T))  &kp END     &studio_unlock
-                                                     &trans            &trans           &trans                                                                          &trans         &trans          &trans
+&rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &rgb_ug RGB_SPD  &rgb_ug RGB_SPI   &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                                &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END        &kp K_REDO  &sys_reset
+&bt BT_CLR       &kp LEFT_GUI       &kp LEFT_ALT     &kp LEFT_CONTROL  &kp LEFT_SHIFT   &bt BT_SEL 4                                   &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp RIGHT   &bootloader
+&bt BT_CLR_ALL   &ext_power EP_TOG  &out OUT_TOG     &rgb_ug RGB_OFF   &rgb_ug RGB_ON   &rgb_ug RGB_TOG                                &kp K_LOCK     &kp LS(LC(V))   &kp LS(LC(C))   &kp LS(LC(T))  &kp END     &studio_unlock
+                                                     &trans            &trans           &trans                                         &trans         &trans          &trans
             >;
 
         };
 
         Fun {
             bindings = <
-&kp F1           &kp F2    &kp F3    &kp F4     &kp F5     &kp F6                             &kp UP                &kp PERCENT   &kp N7     &kp N8   &kp N9  &kp EQUAL  &kp BACKSPACE
-&kp F7           &kp F8    &kp F9    &kp F10    &kp F11    &kp F12                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp PLUS      &kp N4     &kp N5   &kp N6  &kp MINUS  &kp ENTER
-&kp PRINTSCREEN  &mkp MB5  &mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp C_MUTE              &kp DOWN              &kp ASTERISK  &kp N1     &kp N2   &kp N3  &kp FSLH   &kp CARET
-                                     &trans     &trans     &trans                                                   &kp N0        &kp COMMA  &kp DOT
+&kp F1           &kp F2    &kp F3    &kp F4     &kp F5     &kp F6                             &kp PERCENT   &kp N7     &kp N8   &kp N9  &kp EQUAL  &kp BACKSPACE
+&kp F7           &kp F8    &kp F9    &kp F10    &kp F11    &kp F12                            &kp PLUS      &kp N4     &kp N5   &kp N6  &kp MINUS  &kp ENTER
+&kp PRINTSCREEN  &mkp MB5  &mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK                          &kp ASTERISK  &kp N1     &kp N2   &kp N3  &kp FSLH   &kp CARET
+                                     &trans     &trans     &trans                             &kp N0        &kp COMMA  &kp DOT
             >;
 
             label = "Fun";
@@ -210,19 +210,19 @@ keymap {
         system {
             display-name = "SYSTEM";
             bindings = <
-&rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                                &mmv MOVE_UP                     &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END        &kp K_REDO  &sys_reset
-&bt BT_CLR       &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp RIGHT   &bootloader
-&bt BT_CLR_ALL   &ext_power EP_TOG  &out OUT_TOG     &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_TOG  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp K_LOCK     &kp LS(LC(V))   &kp LS(LC(C))   &kp LS(LC(T))  &kp END     &studio_unlock
-                                                     &trans           &trans           &trans                                                                          &trans         &trans          &trans
+&rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                                &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END        &kp K_REDO  &sys_reset
+&bt BT_CLR       &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                                   &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp RIGHT   &bootloader
+&bt BT_CLR_ALL   &ext_power EP_TOG  &out OUT_TOG     &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_TOG                                &kp K_LOCK     &kp LS(LC(V))   &kp LS(LC(C))   &kp LS(LC(T))  &kp END     &studio_unlock
+                                                     &trans           &trans           &trans                                         &trans         &trans          &trans
             >;
 
         };
 
         lower {
             bindings = <
-&to 0   &to 1   &to 0   &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &to 1   &to 0   &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &tog 6  &tog 5                                    &tog 2  &tog 6  &trans
             >;
 
