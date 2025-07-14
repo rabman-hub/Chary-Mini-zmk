@@ -5,10 +5,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
-
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
-
 / {
 
     behaviors {
@@ -57,6 +53,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <280>;
         };
+    };
 
     combos {
         compatible = "zmk,combos";
@@ -141,8 +138,8 @@
         };
     };
 
-    keymap {
-        compatible = "zmk,keymap";
+keymap {
+    compatible = "zmk,keymap";
 
         qwerty {
             display-name = "QWERTY";
