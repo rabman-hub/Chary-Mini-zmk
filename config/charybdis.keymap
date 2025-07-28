@@ -23,7 +23,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <260>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <175>;
             hold-trigger-on-release;
@@ -37,7 +37,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <260>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <175>;
             hold-trigger-on-release;
@@ -52,7 +52,7 @@
             #binding-cells = <2>;
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
         };
     };
 
@@ -162,10 +162,10 @@
 
         symbol {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH        &kp DOLLAR     &kp PERCENT  &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp TILDE        &kp PLUS          &kp UNDERSCORE  &kp MINUS      &kp PIPE     &kp PIPE   &kp MINUS         &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DELETE
-&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp GRAVE       &kp BACKSLASH  &kp EQUAL    &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-                                           &trans          &trans         &trans       &trans     &trans            &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH        &kp DOLLAR     &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp TILDE        &kp PLUS       &kp UNDERSCORE  &kp MINUS      &kp PIPE     &kp PIPE   &kp MINUS      &kp UNDERSCORE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DELETE
+&trans  &kp LESS_THAN    &kp AMPERSAND  &kp GRAVE       &kp BACKSLASH  &kp EQUAL    &kp COLON  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+                                        &trans          &trans         &trans       &trans     &trans         &trans
             >;
 
             label = "SYMBOL";
