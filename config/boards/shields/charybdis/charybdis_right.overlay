@@ -60,6 +60,7 @@ trackball: trackball@0 {
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         invert-x;
+        automouse-layer = <6>;
     };
 };
 
@@ -83,9 +84,9 @@ trackball: trackball@0 {
         /* Temporarily activates Layer 6 (Mouse) on movement for 1000ms */
         input-processors = <&zip_temp_layer 6 1000>;
 
-        /* Converts trackball movement to scroll actions on Layer 1 (Symbol) */
+        /* Converts trackball movement to scroll actions on Layer 3 (Symbol) */
         scroller {
-            layers = <1>;
+            layers = <3>;
             input-processors = <&zip_xy_to_scroll_mapper>;
         };
     };
