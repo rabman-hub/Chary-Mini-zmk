@@ -8,10 +8,6 @@
 #include <physical_layouts.dtsi>
 
 / {
-	trackball: trackball {
-		status = "disabled";
-	};
-
 	chosen {
 
 		zmk,kscan = &kscan0;
