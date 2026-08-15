@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  */
-#include <dt-bindings/zmk/input_processors.h>
+#include <dt-bindings/zmk/pointing.h>
 #include "charybdis.dtsi"
 
 &default_transform {
