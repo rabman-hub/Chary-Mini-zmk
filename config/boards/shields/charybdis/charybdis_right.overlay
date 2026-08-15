@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
+#include <dt-bindings/zmk/input_processors.h>
 #include "charybdis.dtsi"
 
 &default_transform {
@@ -59,6 +59,12 @@
 };
 
 / {
+    /* Define the temporary layer input processor node */
+    zip_temp_layer: zip_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+    };
+
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
