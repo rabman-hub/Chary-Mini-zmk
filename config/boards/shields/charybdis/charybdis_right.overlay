@@ -60,7 +60,6 @@ trackball: trackball@0 {
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         invert-x;
-        automouse-layer = <6>;
     };
 };
 
