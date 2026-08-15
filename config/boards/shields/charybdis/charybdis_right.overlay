@@ -3,7 +3,6 @@
  *
  * SPDX-License-Identifier: MIT
  */
-#include <dt-bindings/zmk/pointing.h>
 #include "charybdis.dtsi"
 
 &default_transform {
@@ -55,27 +54,5 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-    };
-};
-
-/ {
-    /* Define the temporary layer input processor node */
-    zip_temp_layer: zip_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-    };
-
-    trackball_listener: trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-
-        /* Temporarily activates Layer 6 (Mouse) on movement for 1000ms */
-        input-processors = <&zip_temp_layer 6 1000>;
-
-        /* Converts trackball movement to scroll actions on Layer 1 (Symbol) */
-        scroller {
-            layers = <1>;
-            input-processors = <&zip_xy_to_scroll_mapper>;
-        };
     };
 };
