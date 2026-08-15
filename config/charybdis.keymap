@@ -7,6 +7,20 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        /* Temporarily activates Layer 6 (Mouse) on movement for 1000ms */
+        input-processors = <&zip_temp_layer 6 1000>;
+
+        /* Converts trackball movement to scroll actions on Layer 1 (Symbol) */
+        scroller {
+            layers = <1>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
+    };
+
     behaviors {
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
